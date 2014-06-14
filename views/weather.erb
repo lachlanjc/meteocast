@@ -1,0 +1,14 @@
+<link rel="stylesheet" type="text/css" href="main.css" />
+
+<div class="container">
+  <div class="panel">
+    <h2>Current</h2>
+    <h3><%= @current %></h3>
+    <h1><%= @current_temp.to_s %>º</h1>
+  </div>
+  <div class="panel">
+    <h2>Tomorrow</h2>
+    <h3><%= @tomorrow %></h3>
+    <h1><%= @tomorrow_temp.to_s %>º</h1>
+  </div>
+</div>
