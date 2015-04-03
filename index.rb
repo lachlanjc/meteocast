@@ -20,5 +20,10 @@ post '/' do
   @tomorrow_temp = response.forecasts.first['high']
   @city = response.location['city']
   @region = response.location['region']
+  
+  if @region = ""
+    @region = response.location['country']
+  end
+  
   erb :weather
 end
