@@ -43,7 +43,13 @@ button {
   border-radius: 0.66em;
   padding: 0.66em;
 }
-
+input {
+  font: 1em 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  border: 0;
+  border-bottom: solid 2px #d3d3d3;
+  padding: 0.66em;
+  outline: 0;
+}
 .container {
   width: 66%;
   margin: auto;
@@ -52,7 +58,9 @@ button {
   justify-content: space-between;
   -webkit-justify-content: space-between;
 }
-
+.location {
+  text-align: center;
+}
 .panel {
   margin: 2em 2em 0 0;
   padding: 1em;
@@ -60,3 +68,4 @@ button {
   display: block;
 }
 .panel:last-child { margin-right: 0; }
+
