@@ -1,6 +1,4 @@
 Sinatra Weather
 ===============
 
-Uses yahoo_weatherman to update with real weather. :O
-
-Forked from lachlanjc/weather
+A basic Sinatra app that shows weather data from `yahoo_weatherman`. Check it out: http://sinatra-weather.herokuapp.com/
