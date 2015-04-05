@@ -36,12 +36,12 @@ a { text-decoration: none; }
 p a, span a, blockquote a, h1 a, h2 a, h3 a { color: #13A6FA; }
 
 button {
-  font: 1em 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  color: #FFF;
+  font: 1rem 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #FFFFFF;
   background-color: #13A6FA;
   border: 0;
-  border-radius: 0.66em;
-  padding: 0.66em;
+  border-radius: 6px;
+  padding: 8px 12px;
 }
 input {
   font: 1em 'Helvetica Neue', Helvetica, Arial, sans-serif;
