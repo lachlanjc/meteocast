@@ -6,14 +6,9 @@ get '/' do
   erb :home
 end
 
-get '/help' do
-  erb :navigator
-end
-
 post '/' do
-  zipcode = params[:zipcode]
   client = Weatherman::Client.new :unit => 'F'
-  response = client.lookup_by_location(zipcode)
+  response = client.lookup_by_location(params[:zipcode])
   @current = response.condition['text']
   @current_temp = response.condition['temp']
   @tomorrow = response.forecasts.first['text']
