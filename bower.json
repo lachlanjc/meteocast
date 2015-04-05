@@ -1,0 +1,20 @@
+{
+  "name": "sinatra-weather",
+  "version": "0.0.0",
+  "homepage": "https://sinatra-weather.herokuapp.com",
+  "authors": [
+    "lachlanjc <hello@lachlanjc.me>",
+    "tarans22 <taran@getnoodl.es>"
+  ],
+  "description": "A simple Sinatra app to check the weather.",
+  "main": "index.rb",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "sinatra",
+    "weather"
+  ],
+  "license": "MIT",
+  "private": true
+}

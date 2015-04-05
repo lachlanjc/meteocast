@@ -1,16 +1,46 @@
-<link rel="stylesheet" type="text/css" href="main.css" />
-<title>Weather for <%= @city %>, <%= @region %></title>
-<h3 class="location"><%= @city %>, <%= @region %></h3>
-<div class="container">
-  <div class="panel">
-    <h2>Current</h2>
-    <h3><%= @current %></h3>
-    <h1><%= @current_temp.to_s %>º</h1>
-  </div>
-  <div class="panel">
-    <h2>Tomorrow</h2>
-    <h3><%= @tomorrow %></h3>
-    <h1><%= @tomorrow_temp.to_s %>º</h1>
-  </div>
-</div>
-<a href="/"><button>Check out another city</button></a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title><%= "Weather for " + @city + ", " + @region.to_s %></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/primer/2.0.3/primer.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/2.2.2/octicons.css" />
+</head>
+<body>
+  <article class="container" style="text-align: center;">
+    <h1><%= "Weather for " + @city + ", " + @region.to_s %></h1>
+
+    <div class="four-fifths" style="margin: auto;">
+      <div class="columns">
+        <div class="one-half column">
+          <h2>Current</h2>
+          <h3><%= @current %></h3>
+          <h1><%= @current_temp.to_s %>º</h1>
+        </div>
+        <div class="one-half column">
+          <h2>Tomorrow</h2>
+          <h3><%= @tomorrow %></h3>
+          <h1><%= @tomorrow_temp.to_s %>º</h1>
+        </div>
+      </div>
+    </div>
+
+    <form method="post" action="/" class="blankslate has-fixed-width">
+      <span class="mega-octicon octicon-location"></span>
+      <h3>Look at another city?</h3>
+      <div>
+        <label for="zipcode">Zipcode or City</label>
+      </div>
+      <input name="zipcode" type="text" placeholder="San Francisco, CA">
+      <button type="submit" class="btn">Submit</button>
+    </form>
+
+    <hr>
+
+    <p class="text-muted text-left">
+      Built by <a href="https://github.com/lachlanjc/" class="tooltipped tooltipped-n" aria-label="Lachlan Campbell">@lachlanjc</a> with updates from <a href="https://github.com/tarans22" class="tooltipped tooltipped-n" aria-label="Taran Samarth">@tarans22</a>.
+    </p>
+    <p><a href="https://github.com/lachlanjc/weather" class="octicon octicon-mark-github mega-octicon muted-link"></a></p>
+  </article>
+</body>
+</html>
