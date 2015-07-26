@@ -1,22 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Weather</title>
+  <title>Meteocast</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/primer/2.0.3/primer.css" />
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/primer/2.3.0/primer.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/2.2.2/octicons.css" />
 </head>
 <body>
-  <article class="container" style="text-align: center;">
-    <h1>Weather</h1>
+  <main class="container text-center">
+    <h1>Meteocast</h1>
     <p class="lead">
-      A simple weather app built with Sinatra and <a href="https://github.com/dlt/yahoo_weatherman">Yahoo Weatherman</a>.
+      A simple weather app built with Sinatra, <a href="http://primercss.io">Primer</a>, and <a href="https://github.com/dlt/yahoo_weatherman">Yahoo Weatherman</a>.
     </p>
 
     <form method="post" action="/" class="blankslate clean-background" style="padding-top: 0;">
-      <h3><span class="mega-octicon octicon-search text-muted"></span></h3>
       <div>
-        <label for="zipcode">Zipcode or City</label>
+        <label for="zipcode">Find by Zipcode or City</label>
       </div>
       <input name="zipcode" type="text" placeholder="San Francisco, CA">
       <button type="submit" class="btn">Submit</button>
@@ -24,10 +23,12 @@
 
     <hr>
 
-    <p class="text-muted text-left">
-      Built by <a href="https://github.com/lachlanjc/" class="tooltipped tooltipped-n" aria-label="Lachlan Campbell">@lachlanjc</a> with updates from <a href="https://github.com/tarans22" class="tooltipped tooltipped-n" aria-label="Taran Samarth">@tarans22</a>.
-    </p>
-    <p><a href="https://github.com/lachlanjc/weather" class="octicon octicon-mark-github mega-octicon muted-link"></a></p>
-  </article>
+    <footer>
+      <p class="text-muted">
+        A thing from <a href="https://lachlanjc.me/" class="tooltipped tooltipped-n" aria-label="Lachlan Campbell">@lachlanjc</a>.
+      </p>
+      <p><a href="https://github.com/lachlanjc/weather" class="octicon octicon-mark-github mega-octicon muted-link"></a></p>
+    </footer>
+  </main>
 </body>
 </html>

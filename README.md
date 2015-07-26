@@ -1,4 +1,8 @@
-Sinatra Weather
-===============
+Meteocast
+=========
 
-A basic Sinatra app that shows weather data from `yahoo_weatherman`. Check it out: http://sinatra-weather.herokuapp.com/
+Meteocast is a simple app that shows the weather. I built it to learn how Sintra works. Check it out: http://meteocast.herokuapp.com/
+
+___
+
+*A thing by @lachlanjc. MIT licensed.*

@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title><%= "Weather for " + @city + ", " + @region.to_s %></title>
+  <title><%= "Weather for #{@city}, #{@region.to_s} - Meteocast" %></title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/primer/2.0.3/primer.css" />
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/primer/2.3.0/primer.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/2.2.2/octicons.css" />
 </head>
 <body>
-  <article class="container" style="text-align: center;">
-    <h1><%= "Weather for " + @city + ", " + @region.to_s %></h1>
+  <main class="container text-center">
+    <h1><%= "Weather for #{@city}, #{@region.to_s}" %></h1>
 
-    <div class="four-fifths" style="margin: auto;">
+    <div class="four-fifths centered">
       <div class="columns">
         <div class="one-half column">
           <h2>Current</h2>
@@ -37,10 +37,12 @@
 
     <hr>
 
-    <p class="text-muted text-left">
-      Built by <a href="https://github.com/lachlanjc/" class="tooltipped tooltipped-n" aria-label="Lachlan Campbell">@lachlanjc</a> with updates from <a href="https://github.com/tarans22" class="tooltipped tooltipped-n" aria-label="Taran Samarth">@tarans22</a>.
-    </p>
-    <p><a href="https://github.com/lachlanjc/weather" class="octicon octicon-mark-github mega-octicon muted-link"></a></p>
-  </article>
+    <footer>
+      <p class="text-muted">
+        A thing from <a href="https://lachlanjc.me/" class="tooltipped tooltipped-n" aria-label="Lachlan Campbell">@lachlanjc</a>.
+      </p>
+      <p><a href="https://github.com/lachlanjc/weather" class="octicon octicon-mark-github mega-octicon muted-link"></a></p>
+    </footer>
+  </main>
 </body>
 </html>
